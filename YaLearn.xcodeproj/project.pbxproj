@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18313562240BBC6400608EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18313561240BBC6400608EF7 /* AppDelegate.swift */; };
-		18313564240BBC6400608EF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18313563240BBC6400608EF7 /* SceneDelegate.swift */; };
 		18313566240BBC6400608EF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18313565240BBC6400608EF7 /* ViewController.swift */; };
 		18313569240BBC6400608EF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18313567240BBC6400608EF7 /* Main.storyboard */; };
 		1831356B240BBC6500608EF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1831356A240BBC6500608EF7 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1831355E240BBC6400608EF7 /* YaLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18313561240BBC6400608EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18313563240BBC6400608EF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18313565240BBC6400608EF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18313568240BBC6400608EF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1831356A240BBC6500608EF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				18313561240BBC6400608EF7 /* AppDelegate.swift */,
-				18313563240BBC6400608EF7 /* SceneDelegate.swift */,
 				18313565240BBC6400608EF7 /* ViewController.swift */,
 				18313567240BBC6400608EF7 /* Main.storyboard */,
 				1831356A240BBC6500608EF7 /* Assets.xcassets */,
@@ -261,7 +258,6 @@
 			files = (
 				18313566240BBC6400608EF7 /* ViewController.swift in Sources */,
 				18313562240BBC6400608EF7 /* AppDelegate.swift in Sources */,
-				18313564240BBC6400608EF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M88W5GW8G;
 				INFOPLIST_FILE = YaLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +452,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M88W5GW8G;
 				INFOPLIST_FILE = YaLearn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
