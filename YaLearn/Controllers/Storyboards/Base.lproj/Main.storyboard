@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LaunchVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1758" y="121"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="XEL-V3-IFc">
             <objects>
-                <viewController id="q44-dP-yJX" sceneMemberID="viewController">
+                <viewController id="q44-dP-yJX" customClass="HomeVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zOc-L0-g7B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-1242" y="2446"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchVC-->
         <scene sceneID="Bh5-th-QoY">
             <objects>
-                <viewController id="fWm-My-P0k" sceneMemberID="viewController">
+                <viewController id="fWm-My-P0k" customClass="SearchVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lSg-UD-TN7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-279" y="2446"/>
         </scene>
-        <!--View Controller-->
+        <!--ModulesVC-->
         <scene sceneID="9o8-Hp-VBK">
             <objects>
-                <viewController id="Awj-FA-meF" sceneMemberID="viewController">
+                <viewController id="Awj-FA-meF" customClass="ModulesVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EXi-nk-Ps6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="638" y="2446"/>
         </scene>
-        <!--View Controller-->
+        <!--DownloadsVC-->
         <scene sceneID="gRF-y1-Nq7">
             <objects>
-                <viewController id="E5p-m0-Trb" sceneMemberID="viewController">
+                <viewController id="E5p-m0-Trb" customClass="DownloadsVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uJw-Ws-1MM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="1546" y="2445"/>
         </scene>
-        <!--View Controller-->
+        <!--MoreVC-->
         <scene sceneID="a3S-RI-jkP">
             <objects>
-                <viewController id="gVL-lu-7Pq" sceneMemberID="viewController">
+                <viewController id="gVL-lu-7Pq" customClass="MoreVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L3w-WH-R05">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
