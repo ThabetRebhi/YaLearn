@@ -97,12 +97,9 @@
 		18313560240BBC6400608EF7 /* YaLearn */ = {
 			isa = PBXGroup;
 			children = (
-				18313561240BBC6400608EF7 /* AppDelegate.swift */,
-				18313565240BBC6400608EF7 /* ViewController.swift */,
-				18313567240BBC6400608EF7 /* Main.storyboard */,
+				18313596240BBF8100608EF7 /* Application */,
+				18313597240BBF9000608EF7 /* Controllers */,
 				1831356A240BBC6500608EF7 /* Assets.xcassets */,
-				1831356C240BBC6500608EF7 /* LaunchScreen.storyboard */,
-				1831356F240BBC6500608EF7 /* Info.plist */,
 			);
 			path = YaLearn;
 			sourceTree = "<group>";
@@ -123,6 +120,41 @@
 				18313585240BBC6500608EF7 /* Info.plist */,
 			);
 			path = YaLearnUITests;
+			sourceTree = "<group>";
+		};
+		18313595240BBF6E00608EF7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				18313567240BBC6400608EF7 /* Main.storyboard */,
+				1831356C240BBC6500608EF7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		18313596240BBF8100608EF7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18313561240BBC6400608EF7 /* AppDelegate.swift */,
+				1831356F240BBC6500608EF7 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		18313597240BBF9000608EF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18313598240BBF9E00608EF7 /* ViewControllers */,
+				18313595240BBF6E00608EF7 /* Storyboards */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18313598240BBF9E00608EF7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18313565240BBC6400608EF7 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M88W5GW8G;
-				INFOPLIST_FILE = YaLearn/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YaLearn/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6M88W5GW8G;
-				INFOPLIST_FILE = YaLearn/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YaLearn/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
