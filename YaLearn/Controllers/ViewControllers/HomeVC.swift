@@ -36,6 +36,7 @@ class HomeVC: UIViewController {
         HomeTableView.dataSource = self
         
         HomeTableView.register(UINib(nibName: Constants.Cells.HomeBannerTopCell, bundle: nil), forCellReuseIdentifier: Constants.Cells.HomeBannerTopCell)
+        HomeTableView.register(UINib(nibName: Constants.Cells.HomeCollectionCell, bundle: nil), forCellReuseIdentifier: Constants.Cells.HomeCollectionCell)
         HomeTableView.reloadData()
         //HomeTableView.delegate = self
         
@@ -47,8 +48,16 @@ class HomeVC: UIViewController {
 }
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayList.count
+        if section == 0 {
+            return 1
+        }else{
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -56,6 +65,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0 {
         if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.HomeBannerTopCell, for: indexPath) as? HomeBannerTopCell {
             
             cell.configureMoreCellWith(list: arrayList[indexPath.row], indexPath: indexPath)
@@ -67,6 +78,16 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
             
             return UITableViewCell()
         }
+            
+        }else{
+            if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.HomeCollectionCell, for: indexPath) as? HomeCollectionCell {
+                return cell
+            } else {
+                
+                return UITableViewCell()
+            }
+        }
+        
     }
     
     
