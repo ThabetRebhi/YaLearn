@@ -13,8 +13,8 @@ struct Constants {
 
     struct SegueIds {
         
-        static let homeVC = "showHomeVC"
-        static let loginVC = "showLoginVC"
+        static let homeVC = "showHomeVC" //USED
+        static let loginVC = "showLoginVC" //USED
     }
     
     struct ViewControllers {
@@ -73,7 +73,10 @@ struct Constants {
     struct Cells {
         
         //TableView cells
-        static let HomeBannerTopCell = "HomeBannerTopCell"
+        static let HomeBannerTopCell = "HomeBannerTopCell" //USED
+        static let HomeCollectionCell = "HomeCollectionCell" //USED
+        static let inCollectionCell = "inCollectionCell" //USED
+        
         static let moreCell = "MoreCell"
         static let appSettingsCell = "AppSettingsCell"
         static let accountCell = "AccountCell"
@@ -96,7 +99,9 @@ struct Constants {
         //CollectionView cell
         static let moreCCell = "MoreCCell"
         static let manageCCell = "ManageCCell"
-        static let homeDefaultCCell = "HomeDefaultCollectionCell"
+        
+        static let homeDefaultCCell = "HomeDefaultCollectionCell"//USED
+        
         static let categoryCollectionCell = "CategoriesCollectionCell"
         static let seeaAllCCell = "SeeAllCollectionCell"
         static let whoIsWatchingCCell = "WhoIsWatchingCCell"
