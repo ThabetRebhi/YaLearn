@@ -20,6 +20,10 @@
                                 <rect key="frame" x="67" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LVe-09-HSW">
+                                <rect key="frame" x="177" y="579" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -27,8 +31,9 @@
                     <navigationItem key="navigationItem" id="W6g-wW-F2s"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="G0B-fy-ugY" kind="show" id="J7j-eX-nT2"/>
-                        <segue destination="oxV-vZ-T8P" kind="show" id="WOy-nf-HJl"/>
+                        <outlet property="myActivityIndicator" destination="LVe-09-HSW" id="snf-qh-BGQ"/>
+                        <segue destination="G0B-fy-ugY" kind="show" identifier="showLoginVC" id="J7j-eX-nT2"/>
+                        <segue destination="oxV-vZ-T8P" kind="show" identifier="showHomeVC" id="WOy-nf-HJl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -52,10 +57,25 @@
                     <view key="view" contentMode="scaleToFill" id="zOc-L0-g7B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KSp-It-VUb">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KSp-It-VUb" firstAttribute="top" secondItem="aj7-Zd-TPR" secondAttribute="top" id="CDB-JF-XOB"/>
+                            <constraint firstItem="KSp-It-VUb" firstAttribute="leading" secondItem="aj7-Zd-TPR" secondAttribute="leading" id="IkV-2J-Jc7"/>
+                            <constraint firstItem="aj7-Zd-TPR" firstAttribute="bottom" secondItem="KSp-It-VUb" secondAttribute="bottom" id="MlY-k6-mAk"/>
+                            <constraint firstItem="aj7-Zd-TPR" firstAttribute="trailing" secondItem="KSp-It-VUb" secondAttribute="trailing" id="Yjr-q6-hsW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aj7-Zd-TPR"/>
                     </view>
                     <navigationItem key="navigationItem" id="srt-tW-HW8"/>
+                    <connections>
+                        <outlet property="HomeTableView" destination="KSp-It-VUb" id="Nq1-zD-kKQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5L-ch-d7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,11 +157,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="YU0-Bb-jwK" kind="relationship" relationship="viewControllers" id="tmE-Ie-u9v"/>
-                        <segue destination="ucT-ZH-UwE" kind="relationship" relationship="viewControllers" id="LRo-wn-yPH"/>
-                        <segue destination="C5Y-zH-H0R" kind="relationship" relationship="viewControllers" id="7wg-XU-JTK"/>
-                        <segue destination="7gc-Y9-MQO" kind="relationship" relationship="viewControllers" id="mCq-6y-aea"/>
                         <segue destination="ATa-f6-O91" kind="relationship" relationship="viewControllers" id="1I0-GR-Epq"/>
+                        <segue destination="7gc-Y9-MQO" kind="relationship" relationship="viewControllers" id="mCq-6y-aea"/>
+                        <segue destination="ucT-ZH-UwE" kind="relationship" relationship="viewControllers" id="LRo-wn-yPH"/>
+                        <segue destination="YU0-Bb-jwK" kind="relationship" relationship="viewControllers" id="tmE-Ie-u9v"/>
+                        <segue destination="C5Y-zH-H0R" kind="relationship" relationship="viewControllers" id="7wg-XU-JTK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cxb-9g-jy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="638" y="-645"/>
         </scene>
-        <!--Item-->
+        <!--HOME-->
         <scene sceneID="3kz-vF-OGs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ATa-f6-O91" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eaQ-bv-FUr"/>
+                    <tabBarItem key="tabBarItem" title="HOME" id="eaQ-bv-FUr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GiV-Jp-Pud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -185,11 +205,11 @@
             </objects>
             <point key="canvasLocation" x="-1242" y="1675"/>
         </scene>
-        <!--Item-->
+        <!--SEARCH-->
         <scene sceneID="R97-PA-nuH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7gc-Y9-MQO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yEa-aZ-rzK"/>
+                    <tabBarItem key="tabBarItem" title="SEARCH" id="yEa-aZ-rzK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g3y-fx-zZf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -204,11 +224,11 @@
             </objects>
             <point key="canvasLocation" x="-279" y="1675"/>
         </scene>
-        <!--Item 2-->
+        <!--MODULES-->
         <scene sceneID="P1b-vI-9SJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ucT-ZH-UwE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="veV-sW-JXN"/>
+                    <tabBarItem key="tabBarItem" title="MODULES" id="veV-sW-JXN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RXv-Bu-H02">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -223,11 +243,11 @@
             </objects>
             <point key="canvasLocation" x="637.60000000000002" y="1674.5127436281859"/>
         </scene>
-        <!--Item 1-->
+        <!--DOWNLOADS-->
         <scene sceneID="Yhv-z9-Ue0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YU0-Bb-jwK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="dlp-DE-TD5"/>
+                    <tabBarItem key="tabBarItem" title="DOWNLOADS" id="dlp-DE-TD5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RfT-2h-xET">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -242,11 +262,11 @@
             </objects>
             <point key="canvasLocation" x="1545" y="1675"/>
         </scene>
-        <!--Item-->
+        <!--MORE-->
         <scene sceneID="Zlq-35-RQ2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C5Y-zH-H0R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="nSC-8Y-Wk8"/>
+                    <tabBarItem key="tabBarItem" title="MORE" id="nSC-8Y-Wk8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rE1-tL-Mob">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
