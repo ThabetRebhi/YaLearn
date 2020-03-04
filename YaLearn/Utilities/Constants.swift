@@ -19,8 +19,8 @@ struct Constants {
     
     struct ViewControllers {
         
-        static let PDFReader = "PDFReader" //USED
-        
+        static let PDFReaderVC = "PDFReaderVC" //USED
+        static let singleBookVC = "singleBookVC" //USED
         
         //launch page
 //        static let launchVC = "LaunchVC"
