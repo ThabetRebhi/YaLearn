@@ -34,6 +34,7 @@ class HomeVC: UIViewController {
         
         arrayList.append(book)
         HomeTableView.dataSource = self
+        HomeTableView.delegate = self
         
         HomeTableView.register(UINib(nibName: Constants.Cells.HomeBannerTopCell, bundle: nil), forCellReuseIdentifier: Constants.Cells.HomeBannerTopCell)
         HomeTableView.register(UINib(nibName: Constants.Cells.HomeCollectionCell, bundle: nil), forCellReuseIdentifier: Constants.Cells.HomeCollectionCell)
@@ -81,6 +82,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
             
         }else{
             if let cell = tableView.dequeueReusableCell(withIdentifier: Constants.Cells.HomeCollectionCell, for: indexPath) as? HomeCollectionCell {
+                cell.currentVC = self
                 return cell
             } else {
                 
@@ -90,5 +92,10 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: Constants.StoryboardIds.moreStories, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "singleBook")
+        self.navigationController!.pushViewController(vc, animated: true)
+    }
     
 }
