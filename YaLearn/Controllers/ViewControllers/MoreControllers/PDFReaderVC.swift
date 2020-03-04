@@ -10,7 +10,7 @@ import UIKit
 import PDFKit
 
 @available(iOS 11.0, *)
-class PDFReader : UIViewController {
+class PDFReaderVC : UIViewController {
     
     @IBOutlet weak var PFDViewer: PDFView!
     @IBOutlet weak var thumbView: PDFThumbnailView!
@@ -20,7 +20,7 @@ class PDFReader : UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.viewDidAppear(true)
+        super.viewDidAppear(animated)
         
         PFDViewer.displayDirection = .vertical
         PFDViewer.usePageViewController(true)
@@ -32,8 +32,8 @@ class PDFReader : UIViewController {
         PFDViewer.document = PDFDocument(url: path)
         
         thumbView.pdfView = PFDViewer
-        thumbView.thumbnailSize = CGSize(width: 50, height: 50)
-        thumbView.layoutMode = .vertical
+        thumbView.thumbnailSize = CGSize(width: 20, height: 20)
+        thumbView.layoutMode = .horizontal
         thumbView.backgroundColor = UIColor(white: 0.9, alpha: 1.0)
         
     }
