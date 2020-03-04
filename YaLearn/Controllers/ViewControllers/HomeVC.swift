@@ -94,7 +94,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: Constants.StoryboardIds.moreStories, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "singleBook")
+        let vc = storyboard.instantiateViewController(withIdentifier: Constants.ViewControllers.singleBookVC) as! singleBookVC
         self.navigationController!.pushViewController(vc, animated: true)
     }
     

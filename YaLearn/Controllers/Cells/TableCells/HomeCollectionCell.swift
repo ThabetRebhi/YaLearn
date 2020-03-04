@@ -75,7 +75,7 @@ extension HomeCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: Constants.StoryboardIds.moreStories, bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "PDFReader")
+        let vc = storyboard.instantiateViewController(withIdentifier: Constants.ViewControllers.singleBookVC) as! singleBookVC
         currentVC.navigationController?.pushViewController(vc, animated: true)
     }
 }
