@@ -18,7 +18,7 @@ class HomeCollectionCell : UITableViewCell{
     
     var sectionTitle: String = ""
     var currentVC = UIViewController()
-    var detailedModel = BookModel(dictionary: [:])
+   // var detailedModel = BookModel(dictionary: [:])
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -71,5 +71,11 @@ extension HomeCollectionCell: UICollectionViewDelegate, UICollectionViewDataSour
             
             return UICollectionViewCell()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: Constants.StoryboardIds.moreStories, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "PDFReader")
+        currentVC.navigationController?.pushViewController(vc, animated: true)
     }
 }
