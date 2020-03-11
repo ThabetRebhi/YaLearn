@@ -85,17 +85,51 @@
         <scene sceneID="Bh5-th-QoY">
             <objects>
                 <viewController id="fWm-My-P0k" customClass="SearchVC" customModule="YaLearn" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lSg-UD-TN7">
+                    <view key="view" contentMode="scaleToFill" id="MXh-M6-FdO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-zJ-gH9">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6Yu-ri-eZh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6Yu-ri-eZh" firstAttribute="leading" secondItem="mKh-zJ-gH9" secondAttribute="leading" id="CfH-Ig-Ft2"/>
+                                    <constraint firstAttribute="bottom" secondItem="6Yu-ri-eZh" secondAttribute="bottom" id="Xxe-0C-5pJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="alH-mR-fNg"/>
+                                    <constraint firstItem="6Yu-ri-eZh" firstAttribute="top" secondItem="mKh-zJ-gH9" secondAttribute="top" id="cdG-JB-D8o"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Yu-ri-eZh" secondAttribute="trailing" id="q0I-CE-rXh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OlD-Lb-lvG">
+                                <rect key="frame" x="0.0" y="94" width="375" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Kb-LU-XDA"/>
+                        <constraints>
+                            <constraint firstItem="mKh-zJ-gH9" firstAttribute="top" secondItem="vQH-yC-iAd" secondAttribute="top" id="H0B-yN-mQP"/>
+                            <constraint firstItem="mKh-zJ-gH9" firstAttribute="leading" secondItem="vQH-yC-iAd" secondAttribute="leading" id="PQa-2Z-LeH"/>
+                            <constraint firstItem="OlD-Lb-lvG" firstAttribute="top" secondItem="mKh-zJ-gH9" secondAttribute="bottom" id="RYN-33-Ug6"/>
+                            <constraint firstItem="OlD-Lb-lvG" firstAttribute="leading" secondItem="vQH-yC-iAd" secondAttribute="leading" id="gWn-NW-7IC"/>
+                            <constraint firstItem="vQH-yC-iAd" firstAttribute="trailing" secondItem="OlD-Lb-lvG" secondAttribute="trailing" id="kaf-gx-slL"/>
+                            <constraint firstItem="vQH-yC-iAd" firstAttribute="bottom" secondItem="OlD-Lb-lvG" secondAttribute="bottom" id="r27-g4-dSO"/>
+                            <constraint firstItem="vQH-yC-iAd" firstAttribute="trailing" secondItem="mKh-zJ-gH9" secondAttribute="trailing" id="ub8-NT-r3o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vQH-yC-iAd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ZQc-hc-B7e"/>
+                    <navigationItem key="navigationItem" id="ZQc-hc-B7e">
+                        <nil key="title"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjY-e7-3xy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-279" y="2446"/>
+            <point key="canvasLocation" x="-279.19999999999999" y="2445.4272863568217"/>
         </scene>
         <!--ModulesVC-->
         <scene sceneID="9o8-Hp-VBK">
