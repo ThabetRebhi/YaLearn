@@ -22,13 +22,14 @@ class PDFReaderVC : UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //self.navigationController?.navigationBar.isHidden = false
         PFDViewer.displayDirection = .vertical
         PFDViewer.usePageViewController(true)
         PFDViewer.pageBreakMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         PFDViewer.autoScales = true
         PFDViewer.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         
-        guard let path = Bundle.main.url(forResource: "REBHI-Thabit-CV-FR 2020 U", withExtension: "pdf") else { return }
+        guard let path = Bundle.main.url(forResource: "2", withExtension: "pdf") else { return }
         PFDViewer.document = PDFDocument(url: path)
         
         thumbView.pdfView = PFDViewer

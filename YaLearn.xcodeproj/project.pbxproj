@@ -32,8 +32,9 @@
 		189C9F2E240BE15B00DC4232 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C9F2D240BE15B00DC4232 /* Constants.swift */; };
 		189C9F30240BE22000DC4232 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C9F2F240BE22000DC4232 /* UIDevice+Extension.swift */; };
 		189C9F33240C02A200DC4232 /* HomeBannerTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189C9F32240C02A200DC4232 /* HomeBannerTopCell.xib */; };
+		18D0532F241A38C7000D621C /* 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18D0532E241A38C7000D621C /* 2.pdf */; };
 		18F7EAAB240E58FA0042AFBE /* PDFReaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7EAAA240E58FA0042AFBE /* PDFReaderVC.swift */; };
-		18F7EAAD240E5F1D0042AFBE /* REBHI-Thabit-CV-FR 2020 U.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18F7EAAC240E5F1D0042AFBE /* REBHI-Thabit-CV-FR 2020 U.pdf */; };
+		18F7EAAD240E5F1D0042AFBE /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18F7EAAC240E5F1D0042AFBE /* 1.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +86,9 @@
 		189C9F2D240BE15B00DC4232 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		189C9F2F240BE22000DC4232 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		189C9F32240C02A200DC4232 /* HomeBannerTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeBannerTopCell.xib; sourceTree = "<group>"; };
+		18D0532E241A38C7000D621C /* 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2.pdf; sourceTree = "<group>"; };
 		18F7EAAA240E58FA0042AFBE /* PDFReaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReaderVC.swift; sourceTree = "<group>"; };
-		18F7EAAC240E5F1D0042AFBE /* REBHI-Thabit-CV-FR 2020 U.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "REBHI-Thabit-CV-FR 2020 U.pdf"; sourceTree = "<group>"; };
+		18F7EAAC240E5F1D0042AFBE /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +205,8 @@
 		18313596240BBF8100608EF7 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				18F7EAAC240E5F1D0042AFBE /* REBHI-Thabit-CV-FR 2020 U.pdf */,
+				18F7EAAC240E5F1D0042AFBE /* 1.pdf */,
+				18D0532E241A38C7000D621C /* 2.pdf */,
 				18313561240BBC6400608EF7 /* AppDelegate.swift */,
 				1831356F240BBC6500608EF7 /* Info.plist */,
 			);
@@ -378,7 +381,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				182A3414240D35300015AF3C /* inCollectionCell.xib in Resources */,
-				18F7EAAD240E5F1D0042AFBE /* REBHI-Thabit-CV-FR 2020 U.pdf in Resources */,
+				18F7EAAD240E5F1D0042AFBE /* 1.pdf in Resources */,
+				18D0532F241A38C7000D621C /* 2.pdf in Resources */,
 				189C9F33240C02A200DC4232 /* HomeBannerTopCell.xib in Resources */,
 				189C9F1A240BC11400DC4232 /* Login.storyboard in Resources */,
 				1831356E240BBC6500608EF7 /* LaunchScreen.storyboard in Resources */,

@@ -21,7 +21,8 @@ class singleBookVC : UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        guard let path = Bundle.main.url(forResource: "REBHI-Thabit-CV-FR 2020 U", withExtension: "pdf") else { return }
+        self.navigationController?.navigationBar.isHidden = false
+        guard let path = Bundle.main.url(forResource: "2", withExtension: "pdf") else { return }
         PDFthumbnail.image = drawPDFfromURL(url: path)
     }
     @IBAction func ReadButtAction(_ sender: Any) {
