@@ -16,16 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ELN-FO-n0V">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LVe-09-HSW">
-                                <rect key="frame" x="177" y="579" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LVe-09-HSW">
+                                <rect key="frame" x="177.5" y="617" width="20" height="20"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ELN-FO-n0V">
+                                <rect key="frame" x="112.5" y="257.5" width="150" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="lOM-K3-40s"/>
+                                    <constraint firstAttribute="height" constant="150" id="z9d-MZ-aRk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ELN-FO-n0V" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3BN-0S-sKV"/>
+                            <constraint firstItem="LVe-09-HSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Qh-us-Ajv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LVe-09-HSW" secondAttribute="bottom" constant="30" id="JxW-fn-5ke"/>
+                            <constraint firstItem="ELN-FO-n0V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQ5-5q-MIn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="W6g-wW-F2s"/>
@@ -38,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="121"/>
+            <point key="canvasLocation" x="637.60000000000002" y="120.98950524737631"/>
         </scene>
         <!--Login-->
         <scene sceneID="0if-Wj-xDo">
