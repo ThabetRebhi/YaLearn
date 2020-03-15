@@ -1,0 +1,5 @@
+target 'YaLearn' do
+    use_frameworks!
+pod 'CircleMenu'
+
+end
